@@ -29,7 +29,15 @@
 
       .zoom:hover{transform: scale(1.5); cursor:pointer;}
 
-      img:hover{animation:glowcolors 1.2s infinite alternate; }
+      img:hover{animation:glowcolors 1.2s infinite alternate;}
+      @keyframes glowcolors{
+        0% {box-shadow: 0 0 20px hotpink;}
+        25% {box-shadow: 0 0 20px skyblue;}
+        50% {box-shadow: 0 0 20px gold;}
+        75% {box-shadow: 0 0 20px darkviolet;}
+        100% {box-shadow: 0 0 20px red;}
+      }
+      
     </style>
   </head>
   <body background="https://www.ufs.ac.za/images/librariesprovider50/default-album/football.jpg?sfvrsn=ba491f20_0&MaxWidth=800&MaxHeight=&ScaleUp=false&Quality=High&Method=ResizeFitToAreaArguments&Signature=E339CB239CCDCCE5B140BBA071DAE55385B15F23">
